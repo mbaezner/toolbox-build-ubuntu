@@ -7,8 +7,8 @@ Simple Containerfile and shell script for building [Toolbox](https://github.com/
 ## Usage
 
 ``` shell
-git clone https://github.com/mbaezner/build-toolbox-ubuntu.git
-cd build-toolbox-ubuntu
+git clone https://github.com/mbaezner/toolbox-build-ubuntu.git
+cd toolbox-build-ubuntu
 podman build --tag toolbox-build-ubuntu .
 podman run --rm -it -v "$(pwd)":/build localhost/toolbox-build-ubuntu /build/build.sh
 sudo mv source/completion/bash/toolbox /usr/share/bash-completion/completions
